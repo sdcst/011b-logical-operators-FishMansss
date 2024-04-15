@@ -31,3 +31,18 @@ Enter a number: 8
 Enter a number: 64
 64 is both a perfect square and divisible by 2.
 """
+import math
+x = input("enter a number")
+x = float(x)
+y = x**.5
+yy = round(y,0)
+
+
+if y == yy and x % 2 == 0:
+    print("this number is a perfect square and divisible by 2")
+if y == yy:
+    print("this number is a perfect square and not divisible by 2")
+if x % 2 == 0:
+    print("this number is divisible by 2 and not a perfect square")
+else:
+    print("this number is neither divisible by 2 or a perfect square")
