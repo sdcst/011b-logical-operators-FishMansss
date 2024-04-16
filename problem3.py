@@ -30,3 +30,47 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+import math
+print("Enter a number")
+x = input()
+x = int(x)
+print("Enter a number")
+y = input()
+y = int(y)
+print("Enter a number")
+z = input()
+z = int(z)
+
+if x > y >z:
+    b = x
+    m = y
+    s = z
+if x > z > y:
+    b = x
+    m = z
+    s = y
+if z > x > y:
+    b = z
+    m = x
+    s = y
+if z > y > x:
+    b = z
+    m = y
+    s = x
+if y > z > x:
+    b = y
+    m = z
+    s = x
+if y > x > z:
+    b = y
+    m = x
+    s = z
+
+if b**2 == m**2 + s**2:
+    print("your number is a pythagorean square")
+    input()
+else:
+    print("your number is not a pythagorean square")
+    input()
+
+    
